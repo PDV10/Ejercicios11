@@ -7,8 +7,8 @@ let contenedor = document.querySelector("#contenedor");
 
 async function renderizado(e){
     e.preventDefault();
-    let href = e.target.getAttribute("href");
-    let url = href;
+     
+    let url = e.target.getAttribute("href");
 
     try {
         let promesa = await fetch(url)
